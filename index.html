@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Spotify Stats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="spotifyLogin" class="spotify-btn">Log in with Spotify</button>
+
+<div id="controls">
+  <select id="timeRange">
+    <option value="short_term">Last Month</option>
+    <option value="medium_term">Last 6 Months</option>
+    <option value="long_term">Last Year</option>
+  </select>
+
+  <select id="limit">
+    <option value="10">Top 10</option>
+    <option value="50">Top 50</option>
+  </select>
+
+  <button id="generateBtn">Generate</button>
+  <button id="downloadBtn">Download Image</button>
+</div>
+
+<div id="statsContainer">
+  <img id="backgroundImage" src="background.jpg">
+  <div id="stats"></div>
+</div>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
